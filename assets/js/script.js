@@ -24,12 +24,15 @@ generateBtn.addEventListener("click", writePassword);
 var generatePassword = function() {
   var numChar = window.prompt("How many characters?\nChoose between 8 to 128 characters:");
 
+  if (!numChar) {
+    return;
+  }
   if (numChar >= 8 && numChar <= 128) {
     window.alert("You chose " + numChar + " characters");
     window.prompt("Would you like to include lowercase?")
   } else if (numChar < 8 || numChar > 128) {
     window.alert("Please choose a number between 8 and 128");
     window.prompt("How many characters?\nChoose between 8 to 128 characters:");
-  }
+  } 
 }
 
