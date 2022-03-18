@@ -6,6 +6,7 @@ var numeric = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var special = [" ", "!", "\"", "#", "$", "%", "&", "\'", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\\", "]", "^", "_", "`", "{", "|", "}", "~"];
 
 
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -18,8 +19,17 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-var passGen = function() {
-  var lowerCaseOption = window.prompt("Would you like to include lowercase characters?");
+
+
+var generatePassword = function() {
+  var numChar = window.prompt("How many characters?\nChoose between 8 to 128 characters:");
+
+  if (numChar >= 8 && numChar <= 128) {
+    window.alert("You chose " + numChar + " characters");
+    window.prompt("Would you like to include lowercase?")
+  } else if (numChar < 8 || numChar > 128) {
+    window.alert("Please choose a number between 8 and 128");
+    window.prompt("How many characters?\nChoose between 8 to 128 characters:");
+  }
 }
 
-passGen()
