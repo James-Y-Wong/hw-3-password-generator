@@ -109,6 +109,8 @@ var generatePassword = function() {
       window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: No" + "\nuppercase: No" + "\nnumbers: No" + "\nspecial: Yes");
     } else if (!bigLetters && !smallLetters && !numbers && !specialChar) {
       window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: No" + "\nuppercase: No" + "\nnumbers: No" + "\nspecial: No");
+      window.alert("Please select at least one character type")
+      generatePassword()
   }
 
 }
