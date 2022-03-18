@@ -74,5 +74,42 @@ var generatePassword = function() {
     } else if (!bigLetters && !smallLetters && !numbers) {
       window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: No" + "\nuppercase: No" + "\nnumbers: No");
   }
+
+  var specialChar = window.confirm("Would you like to include special characters? \nClick OK for Yes \nClick Cancel for No");
+
+  if (bigLetters && smallLetters && numbers && specialChar) {
+    window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: Yes" + "\nuppercase: Yes" + "\nnumbers: Yes" + "\nspecial: Yes");
+    } else if (bigLetters && smallLetters && numbers && !specialChar) {
+      window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: Yes" + "\nuppercase: Yes" + "\nnumbers: Yes" + "\nspecial: No"); 
+    } else if (bigLetters && smallLetters && !numbers && specialChar) {
+      window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: Yes" + "\nuppercase: Yes" + "\nnumbers: No" + "\nspecial: Yes");
+    } else if (bigLetters && smallLetters && !numbers && !specialChar) {
+      window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: Yes" + "\nuppercase: Yes" + "\nnumbers: No" + "\nspecial: No");
+    } else if (bigLetters && !smallLetters && numbers && specialChar) {
+      window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: No" + "\nuppercase: Yes" + "\nnumbers: Yes" + "\nspecial: Yes");
+    } else if (bigLetters && !smallLetters && numbers && !specialChar) {
+      window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: No" + "\nuppercase: Yes" + "\nnumbers: Yes" + "\nspecial: No");
+    } else if (bigLetters && !smallLetters && !numbers && specialChar) {
+      window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: No" + "\nuppercase: Yes" + "\nnumbers: No" + "\nspecial: Yes");
+    } else if (bigLetters && !smallLetters && !numbers && !specialChar) {
+      window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: No" + "\nuppercase: Yes" + "\nnumbers: No" + "\nspecial: No");
+    } else if (!bigLetters && smallLetters && numbers && specialChar) {
+      window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: Yes" + "\nuppercase: No" + "\nnumbers: Yes" + "\nspecial: Yes");
+    } else if (!bigLetters && smallLetters && numbers && !specialChar) {
+      window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: Yes" + "\nuppercase: No" + "\nnumbers: Yes" + "\nspecial: No");
+    } else if (!bigLetters && smallLetters && !numbers && specialChar) {
+      window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: Yes" + "\nuppercase: No" + "\nnumbers: No" + "\nspecial: Yes");
+    } else if (!bigLetters && smallLetters && !numbers && !specialChar) {
+      window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: Yes" + "\nuppercase: No" + "\nnumbers: No" + "\nspecial: No");
+    } else if (!bigLetters && !smallLetters && numbers && specialChar) {
+      window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: No" + "\nuppercase: No" + "\nnumbers: Yes" + "\nspecial: Yes");
+    } else if (!bigLetters && !smallLetters && numbers && !specialChar) {
+      window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: No" + "\nuppercase: No" + "\nnumbers: Yes" + "\nspecial: No");
+    } else if (!bigLetters && !smallLetters && !numbers && specialChar) {
+      window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: No" + "\nuppercase: No" + "\nnumbers: No" + "\nspecial: Yes");
+    } else if (!bigLetters && !smallLetters && !numbers && !specialChar) {
+      window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: No" + "\nuppercase: No" + "\nnumbers: No" + "\nspecial: No");
+  }
+
 }
 
