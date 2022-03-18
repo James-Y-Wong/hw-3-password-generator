@@ -43,6 +43,17 @@ var generatePassword = function() {
     window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: No");
   }
 
-  
+  var bigLetters = window.confirm("Would you like to include uppercase letters? \nClick OK for Yes \nClick Cancel for No");
+
+  if (bigLetters && smallLetters) {
+    window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: Yes" + "\nuppercase: Yes");
+  } else if (bigLetters && !smallLetters) {
+    window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: No" + "\nuppercase: Yes");
+  } else if (!bigLetters && smallLetters) {
+    window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: Yes" + "\nuppercase: No");
+  } else if (!bigLetters && !smallLetters) {
+    window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: No" + "\nuppercase: No");
+  }
+
 }
 
