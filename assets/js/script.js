@@ -22,18 +22,27 @@ generateBtn.addEventListener("click", writePassword);
 
 
 var generatePassword = function() {
+
   var numChar = window.prompt("How many characters?\nChoose between 8 to 128 characters:");
 
   if (!numChar) {
-    return;
+  return;
   }
   if (numChar >= 8 && numChar <= 128) {
-    window.alert("You chose " + numChar + " characters");
+  window.alert("You chose " + numChar + " characters");
   } else if (numChar < 8 || numChar > 128) {
-    window.alert("Please choose a number between 8 and 128");
-    generatePassword()
+  window.alert("Please choose a number between 8 and 128");
+  generatePassword()
   } 
 
-  var smallLetters = window.prompt("Would you like to include lowercase? Y/N")
+  var smallLetters = window.confirm("Would you like to include lowercase letters? \nClick OK for Yes \nClick Cancel for No");
+
+  if (smallLetters) {
+    window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: Yes");
+  } else if (!smallLetters) {
+    window.alert("You chose:" + "\ncharacters: " + numChar + "\nlowercase: No");
+  }
+
+  
 }
 
