@@ -20,7 +20,7 @@ The below picture is the final result. There are no changes to the starter code 
 
 - HTML
 - CSS
-- JavaScipt
+- JavaScript
 
 ## Link To Deployed Page
 
