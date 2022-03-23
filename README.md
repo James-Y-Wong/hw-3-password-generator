@@ -24,4 +24,4 @@ The below picture is the final result. There are no changes to the starter code 
 
 ## Link To Deployed Page
 
-- [Portfolio](https://james-y-wong.github.io/hw-2-portfolio/)
+- [Password Generator](https://james-y-wong.github.io/hw-3-password-generator/)
