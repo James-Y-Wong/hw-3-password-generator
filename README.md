@@ -14,7 +14,17 @@ The purpose of this project is to build a password generator using the JavaScrip
 
 The below picture is the final result. There are no changes to the starter code (HTML and CSS). Only JavaScript portion was original to generate password based on user selected criterias.
 
-![This is an image of the final product of the password generator](/assets/image/password-generator-screenshot.png)
+>This is the Password Generator on initial load
+>
+>![This is an image of the Password Generator on intial load](/assets/image/password-generator-screenshot.png)
+
+>This is the Password Generator prompting user for password criteria
+>
+>![This is an image of the Password Generator prompting user for criteria](/assets/image/password-generator-user-critera-screenshot.png)
+
+>This is the Password Generator result after user input of criteria
+>
+>![This is an image of the Password Generator result after user input](/assets/image/password-generator-password-result-screenshot.png)
 
 ## Languages Used
 
